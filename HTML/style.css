@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+  position: relative;
+  margin: 25px;
+  padding: 10;
+  max-width: 1920px;
+}
+
+.maincontent{
+
+background-color: pink;
+border-style: solid;
+text-align: center;
+margin:25px;
+margin-bottom: 0px;
+margin-top:0px;
+}
+
+footer
+{
+  text-align: center;
+  border-style: solid;
+  border-top: 0px;
+  margin:25px;
+  margin-top:0px;
+}
+#p1{
+  font-style: italic;
+  border-style: dotted;
+  background-color: green;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+#p2{
+  font-style: oblique;
+  border-style: dashed;
+  background-color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+#p3{
+  font-style:unset;
+  border-style:double;
+  background-color: brown;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+#p4{
+  font-style: normal;
+  border-style:groove;
+  background-color: gold;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+
+nav{
+display: grid;
+border-style: ridge; 
+margin:25px;
+margin-bottom: 0px;
+column-gap: 20px
+}
+
+
+.l1{
+  grid-column: 1;
+}
+
+.l2 {
+  grid-column: 2;
+}
+
+.l3 {
+  grid-column: 3;
+}
+
+.l4 {
+  grid-column: 4;
+}
+
+
+/*grid*/
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+
+.wrapper {
+  margin: 150px;
+  margin-top: 0px;
+  display: grid;
+  grid-template-columns: 580px 240px 240px;
+  grid-template-areas:
+  "header header header"
+  "content content sidebar"
+  "footer  footer  footer";
+  background-color: #fff;
+  color: #444;
+}
+
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 10px;
+font-size: 150%;
+}
+
+.header,
+.footer {
+background-color: #999;
+}
+
